@@ -1,0 +1,94 @@
+:root{
+    --blue:#009EE8;
+    --light-blue:#CFEFFF;
+    --white:#ffff;
+    --gray:#4D4D4D;
+    --black:#000;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.container{
+    width: 1360px;
+    margin: auto;
+}
+.title-blue{
+    color: var(--blue);
+}
+
+/* NAV HEAD  */
+
+.nav-head{
+    padding-top: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 408px;
+    height: 49px;
+}
+
+/* CONTACTS */
+
+.contacts{
+    background-image: url(/img/bg.png);
+    background-repeat: no-repeat;
+}
+.link-contacts{
+    color: var(--black);
+}
+.link-contacts::after{
+    content: '';
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    background-image:url(/public/images/chevron-right.svg);
+    background-repeat:no-repeat;
+}
+.contacts{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contacts-text{
+    display: flex;
+    align-content: center;
+}
+.heading-contats{
+    color: var(--gray);
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.delimiter{
+    width: 6px;
+    height: 105px;
+    background-image:url(/public/images/line-1.svg);
+    background-repeat: no-repeat;
+}
+.p-contacts{
+    width: 538px;
+    padding-left: 30px;
+    color:var(--gray);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* WRITE US */
+
+.forms{
+    display: flex;
+}
+
+.right{
+    width: 594px;
+}

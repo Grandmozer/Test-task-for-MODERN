@@ -4,28 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream credit maker</title>
-<!-- 
-    <meta name='Dream credit maker' content=''> -->
 
-    <!-- Facebook Meta Tags -->
-    <!-- <meta property='og:url' content='https://ru.wikipedia.org/wiki/Мэрилин_Монро'>
-    <meta property='og:title' content=''>
-    <meta property='og:description' content=''>
-    <meta property='og:image' content='https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG'> -->
-
-    <!-- Twitter Meta Tags -->
-    <!-- <meta name='twitter:card' content='summary_large_image'>
-    <meta property='twitter:domain' content='tecting-task-for-yandex.netlify.app'>
-    <meta property='twitter:url' content='https://ru.wikipedia.org/wiki/Мэрилин_Монро'>
-    <meta name='twitter:title' content=''>
-    <meta name='twitter:description' content=''>
-    <meta name='twitter:image' content='https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Marilyn_Monroe_-_publicity.JPG/210px-Marilyn_Monroe_-_publicity.JPG'> -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/media.css"> -->
 </head>
 <body>
-    <nav>
-        <a href=""><img src="" alt="logo"></a>
+    <nav class="nav-head container">
+        <a href=""><img class="logo" src="/img/logo.svg" alt="logo"></a>
         <div class="select-large">
-            <select>PREPAID & CREDIT OFFERS</select>
+            <select>PREPAID [&] CREDIT OFFERS</select>
             <select>RESOURCES</select>
         </div>
         <div class="search">
@@ -39,22 +27,103 @@
     <main>
         <div class="container">
             <div class="contacts">
-                <a href="">Best credit offers</a>
-                <a href="">Contact Us</a>
+                <a href="" class="link-contacts">Best credit offers</a>
+                <a href="" class="link-contacts">Contact Us</a>
                 <div class="contacts-text">
-                    <h1>CONTACT US</h1>
+                    <h1 class="heading-contats">CONTACT US</h1>
                     <div class="delimiter"></div>
-                    <p>We welcome your comments, questions, or any request you may have! If you would like to contact our staff, please complete the form below. 
+                    <p class="p-contacts">We welcome your comments, questions, or any request you may have! If you would like to contact our staff, please complete the form below. 
 
                         We will respond to your inquiries ASAP!</p>
                 </div>
             </div>
             <div class="forms">
-                <h2>WRITE US</h2>
-                <label for="Subject">Subject*:</label>
-                <select name="" id="">Select Subject</select>
+                <div class="left">
+                    <h2 class="title-blue">WRITE US</h2>
+                    <label for="Subject">Subject*:</label>
+
+                    <!-- <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true" aria-expanded="false">
+                        <div class="choices__inner">
+                            <select class="form-control choices__input" name="choices-single-no-search" id="choices-single-no-search" hidden="" tabindex="-1" data-choice="active"></select>
+                            <div class="choices__list choices__list--single"></div>
+                        </div>
+                        <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                            <div class="choices__list" role="listbox">
+                                <div id="choices--choices-single-no-search-item-choice-6" class="choices__item choices__item--choice choices__item--selectable is-highlighted" role="option" data-choice="" data-id="6" data-value="Five" data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Label Five</div>
+                                <div id="choices--choices-single-no-search-item-choice-5" class="choices__item choices__item--choice choices__item--disabled" role="option" data-choice="" data-id="5" data-value="Four" data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">Label Four</div>
+                                <div id="choices--choices-single-no-search-item-choice-1" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="1" data-value="One" data-select-text="Press to select" data-choice-selectable="">Label One</div>
+                                <div id="choices--choices-single-no-search-item-choice-7" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="7" data-value="Six" data-select-text="Press to select" data-choice-selectable="">Label Six</div>
+                                <div id="choices--choices-single-no-search-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="Three" data-select-text="Press to select" data-choice-selectable="">Label Three</div>
+                                <div id="choices--choices-single-no-search-item-choice-3" class="choices__item choices__item--choice choices__item--disabled" role="option" data-choice="" data-id="3" data-value="Two" data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">Label Two</div>
+                                <div id="choices--choices-single-no-search-item-choice-4" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="4" data-value="0" data-select-text="Press to select" data-choice-selectable="">Zero</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <label for="E-mail">E-mail*:</label>
+                    <label for="Name">Name*:</label>
+                    <label for="Phone number">Phone number:</label>
+                    <label for="Question">Question*:</label>
+                </div>
+                <div class="right">
+                    <p>All information submitted on this form will remain completely confidential. We DO NOT sell names or email addresses to third parties. <br>Please review our privacy policy for further information. <br>Please note:<br>We DO NOT issue credit cards or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card directly.
+                    </p>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="img-contacts"></div>
+                <h3 class="title-blue">MAILING ADDRESS:</h3>
+                <p>1680 South Ashland Ave Suit# 3007
+                    Chicago, IL 60608-2013</p>
+            </div>
+            <div class="banks">
+                <h2>CONTACT INFORMATION OF BANKS:</h2>
+                <ul class="cards">
+                    <li>
+                        <img src="" alt="">
+                        <div class="text-bank">
+                            <p class="title-bank">BOFI:</p>
+                            <p class="text">Customer Service: 
+                                800-955-7070</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <nav class="nav-footer">
+            <a href=""><img src="/img/logo.svg" alt="logo"></a>
+            <ul class="links-footer">
+                <li class="li-footer">About Us</li>
+                <li class="li-footer">Contact Us</li>
+                <li class="li-footer">Privacy</li>
+                <li class="li-footer">Terms [&]Conditions</li>
+                <li class="li-footer">Sitemap</li>
+            </ul>
+        </nav>
+        <div class="contacts-footer">
+            <p class="p-footer">Copyright © 2015 DreamCreditMaker.com. 
+                All Rights Reserved.</p>
+            <div class="social">
+                <p class="p-footer">FOLLOW US:</p>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </div>
+        <div class="text-footer">
+            *See the credit card's terms and conditions on the online application page. Note that this website may be compensated by credit card issuers when the visitor applies for a card through the links on this website. We do our best to maintain all information accurate and up to date. However, we do not warrant the credit card information won't change. Click the "Apply Online" button and review the current info on the secure credit card terms page.
+
+Information in these articles is brought to you by DreamCreditMaker.com. Banks, issuers, and credit card companies mentioned in the articles do not endorse or guarantee, and are not responsible for, the contents of the articles.
+
+* The DreamCreditMaker.com webpage is a free service and an information resource for credit cards and financial products and services available to eligible United States consumers. DreamCreditMaker.com does not offer any warranties and is not a direct service. There are no guarantees for approval or offers when applying for a credit card. Please refer to the application if you would like more information on each credit card. When you click "Apply" for a particular credit card, please take the time to review the terms and conditions of the product/service at the issuer's website. All logos on the DreamCreditMaker.com website are property of their respective owners.
+
+This website may be compensated by the credit card issuers when people apply for a credit card using the links on this website. We strive to maintain the information accurate on the website. However, the credit card information is subject to change. Therefore, we recommend you to click the "Apply Now" button to review the up to date credit card's terms and conditions.
+
+DreamCreditMaker.com is an independent, advertising-supported web site. The offers that appear on our site are from credit card issuers and companies from which DreamCreditMaker.com receives compensation. This compensation may impact how and where credit products appear on our site, including, for example, the order in which they may appear within listings on separate pages of our web site. DreamCreditMaker.com does not present or review all available credit products.
+
+Please note that DreamCreditMaker.com has financial relationships with some of the merchants mentioned here. DreamCreditMaker.com may be compensated if consumers choose to utilize the links located throught the content on this site and generate sales for the said merchant.  
+        </div>
+    </footer>
 </body>
 </html> 

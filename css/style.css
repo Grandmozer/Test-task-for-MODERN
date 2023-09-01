@@ -1,7 +1,9 @@
 :root{
+    --dark-blue:#0887CC;
     --blue:#009EE8;
     --light-blue:#CFEFFF;
     --white:#ffff;
+    --light-gray:#B3B3B3;
     --gray:#4D4D4D;
     --black:#000;
 }
@@ -14,6 +16,16 @@ h2{
     font-weight: 700;
     line-height: normal;
 }
+p{
+    color: var(--gray);
+}
+label{
+    color: var(--gray);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .container{
     width: 1360px;
 }
@@ -23,6 +35,7 @@ h2{
 .ml280{
     margin-left: 280px;
 }
+
 /* NAV HEAD  */
 
 .nav-head{
@@ -36,6 +49,51 @@ h2{
     width: 408px;
     height: 49px;
 }
+.select-large{
+    display: flex;
+}
+.js-choice{
+    margin-right: 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    color: var(--gray);
+    background-color: var(--white);
+}
+.js-choice::after{
+    content: '';
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    background-image: url(/public/images/keyboard-arrow-down.svg);
+    background-repeat: no-repeat ;
+}
+.option-nav{
+    border: none;
+    color: var(--gray);
+    background-color: var(--white);
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.input-search{
+    width: 234px;
+    height: 32px;
+    padding: 0;
+    border:1px solid var(--light-gray);
+    cursor: pointer;
+}
+.bacground-search{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-image: url(/img/search.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
 
 /* CONTACTS */
 
@@ -46,24 +104,33 @@ h2{
     overflow: visible;
 }
 .link-contacts{
-    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--gray);
 }
 .link-contacts::after{
     content: '';
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     padding-right: 1rem;
     background-image:url(/public/images/chevron-right.svg);
     background-repeat:no-repeat;
 }
 .contacts{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 65px;
+}
+.links-contats{
+    padding: 14px 14px 14px 0px
 }
 .contacts-text{
+    padding-top: 48px;
     display: flex;
     align-content: center;
 }
 .heading-contats{
+    display: flex;
+    align-items: center;
     color: var(--gray);
     font-size: 27px;
     font-style: normal;
@@ -73,6 +140,7 @@ h2{
 .delimiter{
     width: 6px;
     height: 105px;
+    margin-left: 35px;
     background-image:url(/public/images/line-1.svg);
     background-repeat: no-repeat;
 }
@@ -89,9 +157,26 @@ h2{
 /* WRITE US */
 
 .forms{
+    padding-top: 60px;
     display: flex;
 }
-
+/* .left{
+    display: flex;
+    flex-direction: column;
+} */
+.inputs{
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+}
+.inputs label:not(:last-child){
+    padding-bottom: 31px;
+}
+.inputs label + span:after{
+    content: '*';
+    position: relative;
+    color: red;
+}
 .right{
     width: 594px;
 }

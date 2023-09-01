@@ -13,35 +13,37 @@
     <nav class="nav-head container ml280">
         <a href=""><img class="logo" src="/img/logo.svg" alt="logo"></a>
         <div class="select-large">
-            <select>PREPAID & CREDIT OFFERS</select>
-            <select>RESOURCES</select>
-        </div>
-        <div class="search">
-            <form id="form-search" class="form-search search-off" action="#">
-              <input id="input-search" type="text" class="input-search" name="search" placeholder="Что будем искать?" >
-              <button type="button" id="btn-search" class="bacground-search"></button>               
-              <button type="button" id="close-search" class="btn-close-search"></button>
-            </form>
+            <select class="js-choice" name="select" disabled="true">
+                <option class="option-nav" value="">PREPAID & CREDIT OFFERS</option>
+            </select>
+            <select class="js-choice" name="select" disabled="true">
+                <option class="option-nav" value="">RESOURCES</option>
+            </select>
+            <div class="search">
+                <input id="input-search" type="text" class="input-search" name="search" placeholder="" >
+                <button type="button" id="btn-search" class="bacground-search"></button>               
+            </div>
         </div>
     </nav>
     <main>
         <div class="container">
             <div class="contacts">
                 <div class="ml280">
-                    <a href="" class="link-contacts">Best credit offers</a>
-                    <a href="" class="link-contacts">Contact Us</a>
+                    <div class="links-contats">
+                        <a href="" class="link-contacts">Best credit offers</a>
+                        <a href="" class="link-contacts">Contact Us</a>
+                    </div>
                     <div class="contacts-text">
                         <h1 class="heading-contats">CONTACT US</h1>
                         <div class="delimiter"></div>
-                        <p class="p-contacts">We welcome your comments, questions, or any request you may have! If you would like to contact our staff, please complete the form below. 
-
-                            We will respond to your inquiries ASAP!</p>
+                        <p class="p-contacts">We welcome your comments, questions, or any request you may have! If you would like to contact our staff, please complete the form below. <br><br> We will respond to your inquiries ASAP!</p>
                     </div>
                 </div>
             </div>
             <div class="forms ml280">
                 <div class="left">
                     <h2 class="title-blue">WRITE US</h2>
+                    <div class="inputs">
                     <label for="Subject">Subject*:</label>
 
                     <!-- <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true" aria-expanded="false">
@@ -65,6 +67,7 @@
                     <label for="Name">Name*:</label>
                     <label for="Phone number">Phone number:</label>
                     <label for="Question">Question*:</label>
+                </div>
                 </div>
                 <div class="right">
                     <p>All information submitted on this form will remain completely confidential. We DO NOT sell names or email addresses to third parties. <br>Please review our privacy policy for further information. <br>Please note:<br>We DO NOT issue credit cards or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card directly.
@@ -127,5 +130,6 @@ DreamCreditMaker.com is an independent, advertising-supported web site. The offe
 Please note that DreamCreditMaker.com has financial relationships with some of the merchants mentioned here. DreamCreditMaker.com may be compensated if consumers choose to utilize the links located throught the content on this site and generate sales for the said merchant.  
         </div>
     </footer>
+    <script src="/js/choices.min.js"></script>
 </body>
 </html> 

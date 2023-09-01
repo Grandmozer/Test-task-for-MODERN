@@ -16,12 +16,13 @@ h2{
 }
 .container{
     width: 1360px;
-    margin: auto;
 }
 .title-blue{
     color: var(--blue);
 }
-
+.ml280{
+    margin-left: 280px;
+}
 /* NAV HEAD  */
 
 .nav-head{
@@ -39,8 +40,10 @@ h2{
 /* CONTACTS */
 
 .contacts{
+    width: 1920px;
     background-image: url(/img/bg.png);
     background-repeat: no-repeat;
+    overflow: visible;
 }
 .link-contacts{
     color: var(--black);

@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream credit maker</title>
 
+    <link rel="stylesheet" href="/css/choices.min.css">
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/normolize.css">
     <link rel="stylesheet" href="/css/style.css">
+    
     <!-- <link rel="stylesheet" href="/css/media.css"> -->
 </head>
 <body>
@@ -43,34 +46,47 @@
             <div class="forms ml280">
                 <div class="left">
                     <h2 class="title-blue">WRITE US</h2>
+                    <div class="two-colum">
+                    <div class="labels">
+                        <label for="Subject">Subject*:</label>
+                        <label for="E-mail">E-mail*:</label>
+                        <label for="Name">Name*:</label>
+                        <label for="Phone number">Phone number:</label>
+                        <label for="Question">Question*:</label>
+                    </div>
                     <div class="inputs">
-                    <label for="Subject">Subject*:</label>
-
-                    <!-- <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true" aria-expanded="false">
-                        <div class="choices__inner">
-                            <select class="form-control choices__input" name="choices-single-no-search" id="choices-single-no-search" hidden="" tabindex="-1" data-choice="active"></select>
-                            <div class="choices__list choices__list--single"></div>
+                        <div class="input">
+                            <select name="Subject" id="subject" class="default input-form">
+                                <option value="">Select Subject</option>
+                                <option value="Choosing Credit Card">Choosing Credit Card</option>
+                                <option value="Credit Card Application Problems">Credit Card Application Problems</option>
+                                <option value="Earning and Redeeming Rewards">Earning and Redeeming Rewards</option>
+                                <option value="Building Credit with Credit Card">Building Credit with Credit Card</option>
+                                <option value="Balance Transfer Issues">Balance Transfer Issues</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
-                        <div class="choices__list choices__list--dropdown" aria-expanded="false">
-                            <div class="choices__list" role="listbox">
-                                <div id="choices--choices-single-no-search-item-choice-6" class="choices__item choices__item--choice choices__item--selectable is-highlighted" role="option" data-choice="" data-id="6" data-value="Five" data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Label Five</div>
-                                <div id="choices--choices-single-no-search-item-choice-5" class="choices__item choices__item--choice choices__item--disabled" role="option" data-choice="" data-id="5" data-value="Four" data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">Label Four</div>
-                                <div id="choices--choices-single-no-search-item-choice-1" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="1" data-value="One" data-select-text="Press to select" data-choice-selectable="">Label One</div>
-                                <div id="choices--choices-single-no-search-item-choice-7" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="7" data-value="Six" data-select-text="Press to select" data-choice-selectable="">Label Six</div>
-                                <div id="choices--choices-single-no-search-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="Three" data-select-text="Press to select" data-choice-selectable="">Label Three</div>
-                                <div id="choices--choices-single-no-search-item-choice-3" class="choices__item choices__item--choice choices__item--disabled" role="option" data-choice="" data-id="3" data-value="Two" data-select-text="Press to select" data-choice-disabled="" aria-disabled="true">Label Two</div>
-                                <div id="choices--choices-single-no-search-item-choice-4" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="4" data-value="0" data-select-text="Press to select" data-choice-selectable="">Zero</div>
-                            </div>
+                        <div class="input">
+                            <input class="input-form" type="email" name="E-mail" id="email">
                         </div>
-                    </div> -->
-                    <label for="E-mail">E-mail*:</label>
-                    <label for="Name">Name*:</label>
-                    <label for="Phone number">Phone number:</label>
-                    <label for="Question">Question*:</label>
+                        <div class="input">
+                            <input class="input-form" type="text" id="name">
+                        </div>
+                        <div class="input">
+                            <input class="input-form" type="Phone" id="Phone">
+                        </div>
+                        <div class="input">
+                            <textarea name="questions" id="questions" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="inp-bottom-block">
+                            <p class="danger-text">* required fields</p>
+                            <button class="btn-forms">SEND</button>
+                        </div>
+                    </div>
                 </div>
                 </div>
                 <div class="right">
-                    <p>All information submitted on this form will remain completely confidential. We DO NOT sell names or email addresses to third parties. <br>Please review our privacy policy for further information. <br>Please note:<br>We DO NOT issue credit cards or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card directly.
+                    <p>All information submitted on this form will remain completely confidential. We <b>DO NOT sell</b> names or email addresses to third parties. <br><br>Please review our privacy policy for further information. <br><br>Please note:<br>We <b>DO NOT issue credit cards</b> or have any type of personal credit card account information. If you have questions pertaining to an existing credit card account, please contact the bank that issued the credit card <br> directly.
                     </p>
                 </div>
             </div>
@@ -131,5 +147,6 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         </div>
     </footer>
     <script src="/js/choices.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html> 

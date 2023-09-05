@@ -48,16 +48,24 @@
                     <h2 class="title-blue">WRITE US</h2>
                     <div class="two-colum">
                     <div class="labels">
-                        <label for="Subject">Subject*:</label>
-                        <label for="E-mail">E-mail*:</label>
-                        <label for="Name">Name*:</label>
+                        <label for="Subject">Subject <span class="danger-text">*</span>:</label>
+                        <label for="E-mail">E-mail <span class="danger-text">*</span>:</label>
+                        <label for="Name">Name <span class="danger-text">*</span>:</label>
                         <label for="Phone number">Phone number:</label>
-                        <label for="Question">Question*:</label>
+                        <label for="Question">Question <span class="danger-text">*</span>:</label>
                     </div>
-                    <div class="inputs">
+                    <form
+                    id="gform"
+                    method="post"
+                    class="inputs"
+                    action="https://script.google.com/macros/s/AKfycbziD_PAW1Q5UPVPr9k_rziaUrMSQwkyqgYj2ntXvANMMnqpxA5ikwiE7nT5CA7H3Ij7mg/exec"
+                        >
                         <div class="input">
-                            <select name="Subject" id="subject" class="default input-form">
-                                <option value="">Select Subject</option>
+                            <select
+                             name="Subject"
+                            id="subject"
+                            class="default input-form">
+                                <option class="placeholder" value="">Select Subject</option>
                                 <option value="Choosing Credit Card">Choosing Credit Card</option>
                                 <option value="Credit Card Application Problems">Credit Card Application Problems</option>
                                 <option value="Earning and Redeeming Rewards">Earning and Redeeming Rewards</option>
@@ -67,22 +75,26 @@
                             </select>
                         </div>
                         <div class="input">
-                            <input class="input-form" type="email" name="E-mail" id="email">
+                            <input 
+                            class="input-form"
+                            type="email"
+                            name="email"
+                            id="email">
                         </div>
                         <div class="input">
                             <input class="input-form" type="text" id="name">
                         </div>
                         <div class="input">
-                            <input class="input-form" type="Phone" id="Phone">
+                            <input class="input-form" type="Phone" id="Phone" placeholder="1-XXX-XXX-XXXX">
                         </div>
                         <div class="input">
                             <textarea name="questions" id="questions" cols="30" rows="10"></textarea>
                         </div>
                         <div class="inp-bottom-block">
                             <p class="danger-text">* required fields</p>
-                            <button class="btn-forms">SEND</button>
+                            <button type="submit" class="btn-forms">SEND</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 </div>
                 <div class="right">
@@ -147,6 +159,7 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         </div>
     </footer>
     <script src="/js/choices.min.js"></script>
+    <script src="/js/sendEmail.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html> 

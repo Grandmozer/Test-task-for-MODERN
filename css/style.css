@@ -207,6 +207,7 @@ textarea{
     border-radius: 0px;
     border: 1px solid var(--light-gray);
     background-color: var(--white);
+    color: var(--light-gray);
 }
 .is-open .choices__inner{
     width: 546px;
@@ -217,6 +218,8 @@ textarea{
 }
 #choices--subject-item-choice-7{
     display: none;
+    color: var(--light-gray);
+
 }
 .choices[data-type*="select-one"]::after {
     content: url(/img/example.svg);
@@ -227,10 +230,11 @@ textarea{
     right: 32.5px;
     top: 0%;
     margin-top: 0.5px;
-    transition: all 0.1s ease-out;
+    /* transition: all 0.1s ease-out; */
 }
-.choices[data-type*="select-one"] :focus::after{
-    top: 0%;
+.choices[data-type*="select-one"].is-open:after{
+    top: 85%;
+    right: 0px;
     margin-top: 4.5px;
     transform: rotate(180deg);
 }
@@ -242,8 +246,11 @@ textarea{
     height: 28px;
     border: 1px solid var(--light-gray);
 }
+.input-form::placeholder{
+    color: var(--light-gray);
+}
 .placeholder{
-    resize: none;
+    color: var(--light-gray);
 }
 #questions{
     width: 539px;
@@ -272,6 +279,7 @@ textarea{
     background-color:var(--blue);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 .right{
     width: 315px;

@@ -281,6 +281,9 @@ textarea{
     border: none;
     cursor: pointer;
 }
+.btn-forms:focus,.btn-forms:hover{
+    background-color:var(--dark-blue);
+}
 .right{
     width: 315px;
     padding-left: 58px;
@@ -293,4 +296,40 @@ textarea{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* CONTACT MAIL */
+
+.contacts-mail{
+    width: 1920px;
+    height: 117px;
+    padding-top: 43px;
+    margin-top: 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--light-blue);
+    background-image: url(/public/images/frame-2.svg);
+    background-repeat: no-repeat;
+    background-position: 42.1%;
+}
+.img-contacts{
+    padding-left: 30px;
+}
+.title-mail{
+    padding-bottom: 15px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.img-contacts p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:var(--gray);
+}
+.txt-block-mail{
+    width: 256px;
 }

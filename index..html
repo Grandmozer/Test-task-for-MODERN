@@ -58,11 +58,11 @@
                     id="gform"
                     method="post"
                     class="inputs"
-                    action="https://script.google.com/macros/s/AKfycbziD_PAW1Q5UPVPr9k_rziaUrMSQwkyqgYj2ntXvANMMnqpxA5ikwiE7nT5CA7H3Ij7mg/exec"
+                    action="#"
                         >
                         <div class="input">
                             <select
-                             name="Subject"
+                            name="Subject"
                             id="subject"
                             class="default input-form">
                                 <option class="placeholder" value="">Select Subject</option>
@@ -82,17 +82,32 @@
                             id="email">
                         </div>
                         <div class="input">
-                            <input class="input-form" type="text" id="name">
+                            <input
+                            class="input-form"
+                            type="text" 
+                            name="name"
+                            id="name">
                         </div>
                         <div class="input">
-                            <input class="input-form" type="Phone" id="Phone" placeholder="1-XXX-XXX-XXXX">
+                            <input
+                            class="input-form"
+                            type="Phone"
+                            name="phone"
+                            id="Phone"
+                            placeholder="1-XXX-XXX-XXXX">
                         </div>
                         <div class="input">
-                            <textarea name="questions" id="questions" cols="30" rows="10"></textarea>
+                            <textarea 
+                            name="questions" 
+                            id="questions"></textarea>
                         </div>
                         <div class="inp-bottom-block">
                             <p class="danger-text">* required fields</p>
-                            <button type="submit" class="btn-forms">SEND</button>
+                            <button 
+                            class="btn-forms"
+                            type="submit"
+                            id="btn"
+                             >SEND</button>
                         </div>
                     </form>
                 </div>
@@ -102,11 +117,12 @@
                     </p>
                 </div>
             </div>
-            <div class="contacts-mail ml280">
-                <div class="img-contacts"></div>
-                <h3 class="title-blue">MAILING ADDRESS:</h3>
-                <p>1680 South Ashland Ave Suit# 3007
-                    Chicago, IL 60608-2013</p>
+            <div class="contacts-mail">
+                <div class="img-contacts  ml280">
+                    <h3 class="title-blue title-mail">MAILING ADDRESS:</h3>
+                    <p class="">1680 South Ashland Ave Suit# 3007
+                        Chicago, IL 60608-2013</p>
+                </div>
             </div>
             <div class="banks ml280">
                 <h2>CONTACT INFORMATION OF BANKS:</h2>
@@ -159,7 +175,6 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         </div>
     </footer>
     <script src="/js/choices.min.js"></script>
-    <script src="/js/sendEmail.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html> 

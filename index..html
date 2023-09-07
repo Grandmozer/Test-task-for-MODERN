@@ -55,7 +55,7 @@
                         <label for="Question">Question <span class="danger-text">*</span>:</label>
                     </div>
                     <form
-                    id="gform"
+                    id="form"
                     method="post"
                     class="inputs"
                     action="#"
@@ -64,7 +64,7 @@
                             <select
                             name="Subject"
                             id="subject"
-                            class="default input-form">
+                            class="default input-form _req">
                                 <option class="placeholder" value="">Select Subject</option>
                                 <option value="Choosing Credit Card">Choosing Credit Card</option>
                                 <option value="Credit Card Application Problems">Credit Card Application Problems</option>
@@ -76,14 +76,14 @@
                         </div>
                         <div class="input">
                             <input 
-                            class="input-form"
+                            class="input-form _req _email"
                             type="email"
                             name="email"
                             id="email">
                         </div>
                         <div class="input">
                             <input
-                            class="input-form"
+                            class="input-form _req"
                             type="text" 
                             name="name"
                             id="name">
@@ -98,6 +98,7 @@
                         </div>
                         <div class="input">
                             <textarea 
+                            class="_req"
                             name="questions" 
                             id="questions"></textarea>
                         </div>
@@ -175,6 +176,7 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         </div>
     </footer>
     <script src="/js/choices.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/js/input.js"></script>
+    <script src="/js/validate.js"></script>
 </body>
 </html> 

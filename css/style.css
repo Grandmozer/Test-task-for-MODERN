@@ -183,15 +183,25 @@ textarea{
     width: 161px;
     padding-bottom: 31px;
 }
-.labels label + span:after{
-    content: '*';
-    position: relative;
-    color: red;
-}
 .inputs{
     padding-top: 61px;
     display: flex;
     flex-direction: column;
+}
+.inputs::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090 url(/img/loading.gif) center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+.inputs._sending::after{
+    opacity: 1;
+    visibility: visible;
 }
 /* .inputs label:not(:last-child){
     padding-bottom: 31px;
@@ -249,6 +259,10 @@ textarea{
 .input-form::placeholder{
     color: var(--light-gray);
 }
+.input-form._error{
+    border: 1px solid var(--red);
+    
+}
 .placeholder{
     color: var(--light-gray);
 }
@@ -256,6 +270,9 @@ textarea{
     width: 539px;
     height: 134px;
     border: 1px solid var(--light-gray);
+}
+#questions._error{
+    border: 1px solid var(--red);
 }
 .inp-bottom-block{
     display: flex;

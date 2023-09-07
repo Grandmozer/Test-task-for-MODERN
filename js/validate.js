@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 body: formData,
             });
             if(response.ok){
-                let result =await response.json();
+                let result = await response.json();
                 alert(result.message);
                 form.reset();
                 form.classList.remmove('_sending');

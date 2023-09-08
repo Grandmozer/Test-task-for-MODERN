@@ -3,7 +3,21 @@
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('form');
     const popUp = document.getElementById('pop-up');
+    const popUpBtn = document.getElementById('pop-up_btn');
+    const btn =document.getElementById('btn');
+
     form.addEventListener('submit', formSend);
+
+    btn.addEventListener('click',()=>{
+        popUp.classList.add('open');
+        setTimeout(removePopUp,3000);
+    });
+
+    popUpBtn.addEventListener('click',removePopUp);
+
+    function removePopUp(){
+        popUp.classList.remove('open');
+    }
 
     async function formSend(e){
         e.preventDefault();
@@ -23,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function(){
                 let result = await response.json();
                 console.log(result.message);
                 form.reset();
-                popUp.classList.add('open');
+                // popUp.classList.add('open');
                 // form.classList.remove('._sending');
             }
-            else{
-                // alert("Ошибка");
-                // form.classList.remove('._sending');
-            }
+            // else{
+            //     alert("Ошибка");
+            //     form.classList.remove('._sending');
+            // }
         }else{
             alert('Заполните обязательные поля')
         }
@@ -42,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
             const input = formReq[index];
             formRemoveError(input);
 
-            if(input.classList.contains('_email')){
+            if(input.classList.contains('email')){
                 if(emailTest(input)){
                     formAddError(input);
                     error++;

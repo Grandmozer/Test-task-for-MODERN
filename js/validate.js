@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('form');
+    const popUp = document.getElementById('pop-up');
     form.addEventListener('submit', formSend);
 
     async function formSend(e){
@@ -13,20 +14,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
         if(error === 0){
-            form.classList.add('_sending');
+            // form.classList.add('_sending');
             let response = await fetch('https://script.google.com/macros/s/AKfycbziD_PAW1Q5UPVPr9k_rziaUrMSQwkyqgYj2ntXvANMMnqpxA5ikwiE7nT5CA7H3Ij7mg/exec',{
                 method: 'Post',
                 body: formData,
             });
             if(response.ok){
                 let result = await response.json();
-                alert(result.message);
+                console.log(result.message);
                 form.reset();
-                form.classList.remmove('_sending');
+                popUp.classList.add('open');
+                // form.classList.remove('._sending');
             }
             else{
-                alert("Ошибка");
-                form.classList.remmove('_sending');
+                // alert("Ошибка");
+                // form.classList.remove('._sending');
             }
         }else{
             alert('Заполните обязательные поля')

@@ -7,6 +7,7 @@
     --gray:#4D4D4D;
     --black:#000;
     --red:#EF5C53;
+    --yellow:#FFF3C4;
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -188,7 +189,7 @@ textarea{
     display: flex;
     flex-direction: column;
 }
-.inputs::after{
+/* .inputs::after{
     content:"";
     position: absolute;
     top: 50%;
@@ -202,7 +203,7 @@ textarea{
 .inputs._sending::after{
     opacity: 1;
     visibility: visible;
-}
+} */
 /* .inputs label:not(:last-child){
     padding-bottom: 31px;
 } */
@@ -285,6 +286,13 @@ textarea{
     line-height: normal;
     color: var(--red);
 }
+.big-danger-text{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--red);
+}
 .btn-forms{
     padding:16px 59px;
     font-size: 16px;
@@ -314,7 +322,44 @@ textarea{
     font-weight: 400;
     line-height: normal;
 }
-
+.pop-up{
+    position: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: start;
+    opacity: 0;
+    visibility: hidden;  
+}
+.pop-up.open{
+    opacity: 1;
+    visibility: visible;
+}
+.pop-up_body{
+    width: 510px;
+    /* height: 142px; */
+    padding: 38px 0px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: var(--yellow);  
+    transition: all 0.8s ease 0s;
+}
+.pop-up_txt{
+    padding-top: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #4D4D4D;
+}
+.pop-up_btn{
+    width: 27px;
+    height: 27px;
+    border:none;
+    background-image:url(/public/images/frame-1.svg) ;
+    background-repeat:no-repeat;
+}
 /* CONTACT MAIL */
 
 .contacts-mail{

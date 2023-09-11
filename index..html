@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/normolize.css">
     <link rel="stylesheet" href="/css/style.css">
     
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <!-- <link rel="stylesheet" href="/css/media.css"> -->
 </head>
 <body>
@@ -79,22 +80,28 @@
                             class="input-form _req _email"
                             type="email"
                             name="email"
-                            id="email">
+                            id="email"
+                            data-validate-field="mail">
                         </div>
                         <div class="input">
                             <input
                             class="input-form _req"
+                            autocomplete="off"
                             type="text" 
                             name="name"
-                            id="name">
+                            id="name"
+                            data-validate-field="name">
                         </div>
                         <div class="input">
-                            <input
+                            <input                           
                             class="input-form"
-                            type="phone"
+                            autocomplete="off"
+                            type="phone"                         
                             name="phone"
                             id="phone"
-                            placeholder="1-XXX-XXX-XXXX">
+                            placeholder="1-XXX-XXX-XXXX"                            
+                            data-validate-field="tel"
+                            data-validate-rules="phone">
                         </div>
                         <div class="input">
                             <textarea 
@@ -242,8 +249,61 @@ DreamCreditMaker.com is an independent, advertising-supported web site. The offe
 Please note that DreamCreditMaker.com has financial relationships with some of the merchants mentioned here. DreamCreditMaker.com may be compensated if consumers choose to utilize the links located throught the content on this site and generate sales for the said merchant.  
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/js/inputmask.min.js"></script>
+    <!-- <script src="/js/jquery.inputmask.js"></script> -->
+    <!-- <script src="/js/inputmask.js"></script> -->
+    <!-- <script src="/js/inputmask.date.extensions.js"></script> -->
     <script src="/js/choices.min.js"></script>
     <script src="/js/input.js"></script>
     <script src="/js/validate.js"></script>
+
+    <script>
+        var selector = document.getElementById("phone");
+
+        var im = new Inputmask("1-999-999-999");
+        im.mask(selector);
+
+        Inputmask({"mask": "1-(999) 999-9999"}).mask(selector);Inputmask("9-a{1,3}9{1,3}").mask(selector);
+        Inputmask("9", { repeat: 10 }).mask(selector);
+   
+        // Валидация
+        const validation = new JustValidate('#form');
+
+        validation
+          .addField('#name', [
+            {
+                rule: 'customRegexp',
+                value: /'^[a-zA-Z.]*$/g,
+            },
+            {
+              rule: 'minLength',
+              value: 3,
+            },
+            {
+              rule: 'maxLength',
+              value: 30,
+            },
+          ])
+          .addField('#questions', [
+            {
+              rule: 'minLength',
+              value: 10 ,
+            },
+            {
+              rule: 'maxLength',
+              value: 300,
+            },
+          ])
+          .addField('#email', [
+            {
+              rule: 'required',
+              errorMessage: 'Email is required',
+            },
+            {
+              rule: 'email',
+              errorMessage: 'Email is invalid!',
+            },
+          ]);</script>
 </body>
 </html> 

@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', function(){
     function removePopUp(){
         popUp.classList.remove('open');
     }
-
+    
     async function formSend(e){
         e.preventDefault();
-
+        
         let error = formValidate(form);
-
+        
         let formData = new FormData(form);
-
-
+        
+        
         if(error === 0){
             // form.classList.add('_sending');
             let response = await fetch('https://script.google.com/macros/s/AKfycbziD_PAW1Q5UPVPr9k_rziaUrMSQwkyqgYj2ntXvANMMnqpxA5ikwiE7nT5CA7H3Ij7mg/exec',{

@@ -378,7 +378,7 @@ textarea{
     background-position: 42.1%;
 }
 .img-contacts{
-    padding-left: 30px;
+    padding-left: 162px;
 }
 .title-mail{
     padding-bottom: 15px;
@@ -396,4 +396,54 @@ textarea{
 }
 .txt-block-mail{
     width: 256px;
+}
+.contacts-mail-txt{
+    width: 286px;
+}
+
+/* banks */
+
+.banks{
+    width: 100%;
+    padding-top: 60px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.banks h2{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    /* min-height: 100%; */
+    list-style: none;
+    padding-top: 60px;
+}
+.card{
+    display: flex;
+}
+.card:not(:nth-child(4n)) {
+    margin-right: 63px;
+}
+.title-bank{
+    padding-left: 16px;
+    padding-top: 9px;
+}
+.text-bank{
+    padding-left: 10px;
+    margin-top: 18px;
+    background-image:url(/public/images/line-2.svg);
+    background-repeat:no-repeat;
+}
+.text{
+    width: 149px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--gray);
 }

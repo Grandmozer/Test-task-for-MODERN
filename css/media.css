@@ -1,0 +1,139 @@
+/* 768 */
+@media(min-width:768px){
+
+}
+@media(max-width:769px){
+    h2{
+        font-size: 22px;
+    }
+    .container{
+        width: 768px;
+    }
+    .ml280{
+        margin-left: 22px;
+    }
+    
+/* NAV HEAD  */
+
+    .nav-head{
+        padding-top: 16px;
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 205px;
+        height: 58.49px;
+    }
+    .select-large{
+        margin-right: 47px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .js-choice{
+        margin-right: 0px;
+        font-size: 14px;
+    }
+    .js-choice:nth-child(1){
+        margin-right: 20px;
+    }
+    .input-search{
+        width: 315px;
+        margin-top: 8px;
+    }
+    .bacground-search{
+        margin-top: 8px;
+    }
+    
+/* CONTACTS */
+
+    .contacts{
+        width: 768px;
+        padding-bottom: 22px;
+        margin-top: 14px;
+        background-image: url(/public/images/bg.png);
+        background-size: cover;
+    }
+   .links-contats{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: none;
+    }
+    .heading-contats{
+        margin-top: 39px;
+        font-size: 24px;
+        align-items: start;
+    }
+    .contacts-text {
+        padding-top: 23px;
+    }
+    .delimiter {
+        margin-left: 21px;
+    }
+    .p-contacts{
+        width: 333px;
+        padding-left: 19px;
+        font-size: 16px;
+    }
+    
+/* WRITE US */
+
+    .forms{
+        padding-top: 39px;
+        display: block;
+    }
+    .labels {
+        padding-right: 14px;
+        padding-top: 47px;
+    }
+    .inputs {
+        padding-top: 39px;
+    }
+    .right{
+        padding-top: 41px;
+        padding-left: 0px;
+    }
+    .right p{
+        width: 721px;
+        font-size: 16px;
+    }
+
+/* CONTACT MAIL */
+
+    .contacts-mail{
+        width: 768px;
+        height: 155px;
+        padding-top: 4px;
+        margin-top: 37px;
+        background-position: 28.2%;
+    }
+    .img-contacts{
+        margin-top: 41px;
+    }
+    .title-mail{
+        font-size: 20px;
+    }
+
+/* BANKS */
+
+    .banks{
+        padding-top: 40px;
+        padding-bottom: 0px;
+        margin-left: 0px;
+    }
+    .cards{
+        padding-top: 39px;
+        padding-left: 59px;
+    }
+    .card{
+        padding-bottom: 40px;
+    }
+    .card:not(:nth-child(2n)) {
+        margin-right: 60px;
+    }
+    .card:nth-child(-n+4) {
+        padding-bottom: 40px;
+    }
+}

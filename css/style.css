@@ -362,6 +362,7 @@ textarea{
     background-repeat:no-repeat;
     cursor: pointer;
 }
+
 /* CONTACT MAIL */
 
 .contacts-mail{
@@ -406,6 +407,7 @@ textarea{
 .banks{
     width: 100%;
     padding-top: 60px;
+    padding-bottom: 62px;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -426,7 +428,13 @@ textarea{
     display: flex;
 }
 .card:not(:nth-child(4n)) {
-    margin-right: 63px;
+    margin-right: 67px;
+}
+.card:nth-child(-n + 4) {
+    padding-bottom: 61px;
+}
+.card:nth-child(6){
+    margin-right: 57px;
 }
 .title-bank{
     padding-left: 16px;
@@ -437,13 +445,85 @@ textarea{
     margin-top: 18px;
     background-image:url(/public/images/line-2.svg);
     background-repeat:no-repeat;
+    background-position-x: 9px;
 }
 .text{
     width: 149px;
+    padding-top: 10px;
     padding-left: 16px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: var(--gray);
+}
+.text b:hover{
+    border-bottom: 1px solid var(--gray);
+}
+
+/* Footer */
+
+.footer{
+    padding-top: 27px;
+    background-image:url(/img/BG-footer.png);
+    background-repeat:no-repeat;
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.links-footer{
+    padding-right: 250px;
+    display: flex;
+}
+.li-footer{
+    padding-right: 29px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--white);
+}
+.contacts-footer{
+    padding-top: 23px;
+    padding-bottom: 19px;
+    display: flex;  
+    justify-content: space-between;
+    border-bottom: 1px solid #FAF4F080; 
+}
+.p-footer{
+    width: 280px;
+    margin-left: 280px;
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.p-footer-soc{
+    padding-right: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--white);
+}
+.social{
+    padding-right: 270px;
+    display: flex;
+    align-items:center;
+}
+.social a{
+    padding-right: 10px;
+}
+.text-footer{
+    padding-top: 20px;
+    padding-bottom: 44px;
+    margin-right: 283px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
 }

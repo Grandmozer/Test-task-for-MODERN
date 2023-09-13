@@ -1,6 +1,11 @@
 /* 768 */
-@media(min-width:768px){
-
+@media(min-width:321px){
+    .burger,
+    .menu,
+    .mobile,
+    .menu-btn{
+      display: none;
+    }
 }
 @media(max-width:769px){
     h2{
@@ -53,7 +58,7 @@
         width: 768px;
         padding-bottom: 22px;
         margin-top: 14px;
-        background-image: url(/public/images/bg.png);
+        background-image: url(/public/images/bg-medium.png);
         background-size: cover;
     }
    .links-contats{
@@ -99,6 +104,11 @@
         width: 721px;
         font-size: 16px;
     }
+    .pop-up {
+        margin-left: 115px;
+        position: absolute;
+        top: 436px;
+    }
 
 /* CONTACT MAIL */
 
@@ -136,4 +146,74 @@
     .card:nth-child(-n+4) {
         padding-bottom: 40px;
     }
+
+    /* Footer */
+
+    .footer{
+        background-image:url(/public/images/bg.png);
+        background-repeat:no-repeat;
+        /* background-size:contain; */
+    }
+    .nav-footer {
+        align-items: start;
+    }
+    .links-footer {
+        width: 283px;
+        padding-top: 1px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: flex-end;
+    }
+    .li-footer{
+        padding-right: 31px;
+    }
+    .li-footer:nth-child(-n+3){
+        padding-bottom: 11px;
+    }
+    .li-footer:nth-child(3){
+        padding-right:25px;
+    }
+    .li-footer:nth-child(5){
+        padding-right:25px;
+    }
+    .contacts-footer{
+        padding-top: 21px;
+        font-size: 14px;
+    }
+    .p-footer{
+        margin-left: 0;
+        padding-left: 22px;
+    }
+    .social{
+        padding-right: 15px;
+    }
+    .text-footer{
+        padding-bottom: 17px;
+        margin-right: 25px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+@media(max-width:320px){
+
+    h2{
+        font-size: 18px;
+    }
+    .container{
+        width: 320px;
+    }
+    .ml280{
+        margin-left: 16px;
+    }
+
+/* NAV HEAD */
+
+   .js-choice{
+    display: none;
+   }
 }

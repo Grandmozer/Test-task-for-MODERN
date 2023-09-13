@@ -17,8 +17,10 @@
 <body>
     <nav class="nav-head container ml280">
         <a href="">
-            <picture class="logo" alt="logo">
+            <picture id="logoHeader" class="logo" alt="logo">
+                <source srcset="/public/images/logo-small.svg" media="(max-width: 320px)" />
                 <source srcset="/public/images/logo-medium.svg" media="(max-width: 768px)" />
+
                 <img src="/img/logo.svg" alt="">
             </picture>
         </a>
@@ -29,10 +31,26 @@
             <select class="js-choice" name="select" disabled="true">
                 <option class="option-nav" value="">RESOURCES</option>
             </select>
-            <div class="search">
+            <form id="form-search" class="search form-search search-off"  action="#">
                 <input id="input-search" type="text" class="input-search" name="search" placeholder="" >
+                <header class="mobile" id="burger">
+                    <div class="menu-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </header>
+                  <div class="menu">
+                    <nav>
+                      <ul>
+                        <li><a href="#">PREPAID &amp; CREDIT OFFERS</a></li>
+                        <li><a  href="#">RESOURCES</a></li>
+                      </ul>
+                    </nav>
+                  </div>
                 <button type="button" id="btn-search" class="bacground-search"></button>               
-            </div>
+                <button type="button" id="close-search" class="btn-close-search"></button>               
+            </form>
         </div>
     </nav>
     <main>
@@ -55,11 +73,11 @@
                     <h2 class="title-blue">WRITE US</h2>
                     <div class="two-colum">
                     <div class="labels">
-                        <label for="Subject">Subject <span class="danger-text">*</span>:</label>
-                        <label for="E-mail">E-mail <span class="danger-text">*</span>:</label>
-                        <label for="Name">Name <span class="danger-text">*</span>:</label>
+                        <label for="Subject">Subject<span class="danger-text">*</span>:</label>
+                        <label for="E-mail">E-mail<span class="danger-text">*</span>:</label>
+                        <label for="Name">Name<span class="danger-text">*</span>:</label>
                         <label for="Phone number">Phone number:</label>
-                        <label for="Question">Question <span class="danger-text">*</span>:</label>
+                        <label for="Question">Question<span class="danger-text">*</span>:</label>
                     </div>
                     <form
                     id="form"
@@ -227,7 +245,7 @@
                 <li class="li-footer">About Us</li>
                 <li class="li-footer">Contact Us</li>
                 <li class="li-footer">Privacy</li>
-                <li class="li-footer">Terms [&]Conditions</li>
+                <li class="li-footer">Terms &amp; Conditions</li>
                 <li class="li-footer">Sitemap</li>
             </ul>
         </nav>
@@ -263,6 +281,8 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
     <script src="/js/choices.min.js"></script>
     <script src="/js/input.js"></script>
     <script src="/js/validate.js"></script>
+    <script src="/js/burger.js"></script>
+    <script src="/js/search.js"></script>
     <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> -->
 
     <script>

@@ -7,6 +7,14 @@ function search(){
         logoHeader = document.getElementById("logoHeader");
         // information = document.querySelectorAll('.s');
     
+        if(window.matchMedia("(min-width: 1920px)").matches){
+          inputSearch.classList.add('input-search-active');
+        }  
+        if(window.matchMedia("(min-width: 768px)").matches){
+          inputSearch.classList.add('input-search-active');
+        }  
+
+
     btnSearch.addEventListener('click', () => {
       inputSearch.classList.add('input-search-active');
       inputSearch.classList.remove('input-search');
@@ -15,7 +23,7 @@ function search(){
       closeSearch.classList.add('btn-close-search-active');
       // FindOnPage('text-to-find');
     
-      if(window.matchMedia("(max-width: 768px)").matches){
+      if(window.matchMedia("(max-width: 320px)").matches){
         logoHeader.classList.add('do-not-display');
       }  
       if(window.matchMedia("(max-width: 550px)").matches){

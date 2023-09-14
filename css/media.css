@@ -3,7 +3,9 @@
     .burger,
     .menu,
     .mobile,
-    .menu-btn{
+    .menu-btn,
+    .btn-close-search-active,
+    .label-mobile{
       display: none;
     }
 }
@@ -81,6 +83,7 @@
         width: 333px;
         padding-left: 19px;
         font-size: 16px;
+        line-height: 18.4px;
     }
     
 /* WRITE US */
@@ -103,6 +106,7 @@
     .right p{
         width: 721px;
         font-size: 16px;
+        line-height: 18px;
     }
     .pop-up {
         margin-left: 115px;
@@ -116,7 +120,7 @@
         width: 768px;
         height: 155px;
         padding-top: 4px;
-        margin-top: 37px;
+        margin-top: 39px;
         background-position: 28.2%;
     }
     .img-contacts{
@@ -129,7 +133,7 @@
 /* BANKS */
 
     .banks{
-        padding-top: 40px;
+        padding-top: 41px;
         padding-bottom: 0px;
         margin-left: 0px;
     }
@@ -150,6 +154,7 @@
     /* Footer */
 
     .footer{
+        padding-top: 29px;
         background-image:url(/public/images/bg.png);
         background-repeat:no-repeat;
         /* background-size:contain; */
@@ -195,11 +200,11 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        line-height: 16px;
     }
 }
 
-@media(max-width:320px){
+@media(max-width:321px){
 
     h2{
         font-size: 18px;
@@ -213,7 +218,121 @@
 
 /* NAV HEAD */
 
+    .nav-head {
+        padding-top: 14px;
+    }
+    .mobile-nav{
+        font-size: 14px;
+    }
    .js-choice{
-    display: none;
-   }
+        display: none;
+    }
+    .select-large {
+        margin-right: 33px;
+    }
+   .input-search {
+        width: 0px;
+        margin-top: 0px;
+    }
+   .input-search-active{
+        width: 200px;
+        height: 30px;
+        padding: 0;
+        transition: all 0.5s 0.8s ease;
+    }
+    .bacground-search{
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-size:35px;
+    }
+    .menu{
+        background-color:white;
+    }
+    .menu-btn{
+        width: 35px;
+        height: 35px;
+        margin-right: 16px;
+    }
+    .menu-btn span {
+        height: 2px;
+        width: 17px;
+    }
+
+    /* CONTACTS */
+
+    .contacts{
+        width: 320px;
+        padding-bottom: 29px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        background-image: url(/public/images/bg-small.png);
+        background-size: cover;
+    }
+    .contacts .ml280{
+        margin-left: 0px;
+    }
+    .contacts-text {
+        padding-top: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heading-contats {
+        margin-top: 4px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        align-items: start;
+    }
+    .delimiter{        
+        width: 72px;
+        height: 6px;
+        margin-top: 9px;
+        margin-left: 0px;
+        background-image:url(/public/images/Line-1_small.svg) ;
+        background-repeat: no-repeat;
+    }
+    .p-contacts {
+        width: 287px;
+        padding-top: 11px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 16.1px;
+    }
+
+    /* WRITE US */
+
+    .forms {
+        padding-top: 32px;
+      }
+    .two-colum{
+        display: flex;  
+        flex-direction: column;
+    }
+    .labels{
+        display: none;
+    }
+    .label-mobile{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.1px;
+    }
+    .left .title-blue{
+        margin-left: -15px;
+        text-align: center;
+    }
+    .inputs {
+        padding-top: 17px;
+    }
+    .input {
+        padding-bottom: 18px;
+    }
+    .choices{
+        margin-top: 8px;
+    }
+    .input-form{
+        margin-top: 8px;
+
+    }
 }

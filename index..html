@@ -31,7 +31,7 @@
             <select class="js-choice" name="select" disabled="true">
                 <option class="option-nav" value="">RESOURCES</option>
             </select>
-            <form id="form-search" class="search form-search search-off"  action="#">
+            <form id="form-search" class="search form-search search-off header-menu"  action="#">
                 <input id="input-search" type="text" class="input-search" name="search" placeholder="" >
                 <header class="mobile" id="burger">
                     <div class="menu-btn">
@@ -40,17 +40,17 @@
                       <span></span>
                     </div>
                   </header>
-                  <div class="menu">
-                    <nav>
-                      <ul>
-                        <li><a href="#">PREPAID &amp; CREDIT OFFERS</a></li>
-                        <li><a  href="#">RESOURCES</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-                <button type="button" id="btn-search" class="bacground-search"></button>               
-                <button type="button" id="close-search" class="btn-close-search"></button>               
-            </form>
+                  <button type="button" id="btn-search" class="bacground-search"></button>               
+                  <button type="button" id="close-search" class="btn-close-search"></button>               
+                </form>
+                <div class="menu">
+                  <nav>
+                    <ul>
+                      <li><a class="mobile-nav" href="#">PREPAID &amp; CREDIT OFFERS</a></li>
+                      <li><a class="mobile-nav" href="#">RESOURCES</a></li>
+                    </ul>
+                  </nav>
+                </div>
         </div>
     </nav>
     <main>
@@ -86,6 +86,7 @@
                     action="https://script.google.com/macros/s/AKfycbziD_PAW1Q5UPVPr9k_rziaUrMSQwkyqgYj2ntXvANMMnqpxA5ikwiE7nT5CA7H3Ij7mg/exec"
                         >
                         <div class="input">
+                        <label class="label-mobile" for="Subject">Subject<span class="danger-text">*</span>:</label>
                             <select
                             name="Subject"
                             id="subject"
@@ -100,6 +101,7 @@
                             </select>
                         </div>
                         <div class="input">
+                        <label class="label-mobile" for="E-mail">E-mail<span class="danger-text">*</span>:</label>
                             <input 
                             class="input-form _req _email"
                             type="email"
@@ -108,6 +110,7 @@
                             data-validate-field="mail">
                         </div>
                         <div class="input">
+                        <label class="label-mobile" for="Name">Name<span class="danger-text">*</span>:</label>
                             <input
                             class="input-form _req"
                             autocomplete="off"
@@ -117,6 +120,7 @@
                             data-validate-field="name">
                         </div>
                         <div class="input">
+                        <label class="label-mobile" for="Phone number">Phone number:</label>
                             <input                           
                             class="input-form"
                             autocomplete="off"
@@ -128,6 +132,7 @@
                             data-validate-rules="phone">
                         </div>
                         <div class="input">
+                        <label class="label-mobile" for="Question">Question<span class="danger-text">*</span>:</label>
                             <textarea 
                             class="_req"
                             name="questions" 

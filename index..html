@@ -245,7 +245,13 @@
     </main>
     <footer class="footer">
         <nav class="nav-footer ml280">
-            <a href=""><img src="/public/images/logo.svg" alt="logo"></a>
+            <a href="">
+                <picture id="logoFooter"  alt="logo">
+                    <source srcset="/public/images/logo-small-white.svg" media="(max-width: 320px)" />
+                    <!-- <source srcset="/public/images/logo-medium.svg" media="(max-width: 768px)" /> -->
+    
+                    <img src="/public/images/logo.svg" alt="">
+                </picture></a>
             <ul class="links-footer">
                 <li class="li-footer">About Us</li>
                 <li class="li-footer">Contact Us</li>
@@ -259,9 +265,11 @@
                 All Rights Reserved.</p>
             <div class="social">
                 <p class="p-footer-soc">FOLLOW US:</p>
-                <a href=""><img src="/public/images/ic-24-facebook.svg" alt=""></a>
-                <a href=""><img src="/public/images/ic-24-twitter.svg" alt=""></a>
-                <a href=""><img src="/public/images/ic-24-google.svg" alt=""></a>
+                <div class="soc-icons">
+                    <a href=""><img src="/public/images/ic-24-facebook.svg" alt=""></a>
+                    <a href=""><img src="/public/images/ic-24-twitter.svg" alt=""></a>
+                    <a href=""><img src="/public/images/ic-24-google.svg" alt=""></a>
+                </div>
             </div>
         </div>
         <div class="text-footer ml280">
@@ -279,24 +287,25 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="/js/inputmask.min.js"></script>
-    <script src="/js/jquery.inputmask.js"></script>
-    <script src="/js/inputmask.js"></script>
-    <!-- <script src="/js/inputmask.date.extensions.js"></script> -->
     <script src="/js/choices.min.js"></script>
     <script src="/js/input.js"></script>
+    
+    <!-- <script src="/js/inputmask.date.extensions.js"></script> -->
+    <!-- <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="/js/inputmask.min.js"></script>
+    <!-- <script src="/js/inputmask.js"></script> -->
+    
     <script src="/js/validate.js"></script>
-    <script src="/js/burger.js"></script>
     <script src="/js/search.js"></script>
+    <script src="/js/burger.js"></script>
     <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script> -->
-
     <script>
         var selector = document.getElementById("phone");
 
         var im = new Inputmask("1-999-999-999");
         im.mask(selector);
 
-        Inputmask({"mask": "1-999-999-999"}).mask(selector);
+        Inputmask({"mask": "1-999-999-999",elem}).mask(selector);
         Inputmask("9-a{1,3}9{1,3}").mask(selector);
         Inputmask("9", { repeat: 10 }).mask(selector);
 
@@ -339,5 +348,6 @@ Please note that DreamCreditMaker.com has financial relationships with some of t
         //     },
         //   ]);
           </script>
+
 </body>
 </html> 
